@@ -23,7 +23,7 @@ pipeline {
             }
         }
         stage('Deploy'){
-            step{
+            steps {
                 sleep time:60
                 sh './jenkins/scripts/kill.sh' 
             }
